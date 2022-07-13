@@ -14,7 +14,7 @@
 // 	return word;
 // }
 // console.log(repeatStr(5,`Hello`));
-//   _____________________________________________________________________________________________________ 
+//   _____________________________________________________________________________________________________
 //  * ЛУЧШЕЕ РЕШЕНИЕ
 // repeatStr = (n, s) => s.repeat(n)
 // _____________________________________________________________________________________________________
@@ -24,12 +24,12 @@
 // 		return  NaN;
 // 	} else if (b > a && b === 0 ) {
 // 		return NaN;
-// 	} 
+// 	}
 // 	return (a > b) ? a % b : b % a;
 // }
 // console.log( remainder(6, -3) );
 //return ((b % a ) + a ) % a;
-//   _____________________________________________________________________________________________________ 
+//   _____________________________________________________________________________________________________
 //  * ЛУЧШЕЕ РЕШЕНИЕ
 // function remainder(a, b){
 // 	let min = Math.min(a,b);
@@ -39,7 +39,7 @@
 // _____________________________________________________________________________________________________
 //todo  3  For Twins: 2. Math operations
 // function iceBrickVolume(radius, bottleLength, rimLength) {
-// 	return 2*(radius**2)*(bottleLength - rimLength);    (длинна*ширина*высота)  Высоту нашли:(bottleLength - rimLength) ,  длинна это 2 радиуса, 
+// 	return 2*(radius**2)*(bottleLength - rimLength);    (длинна*ширина*высота)  Высоту нашли:(bottleLength - rimLength) ,  длинна это 2 радиуса,
 //  }
 // _____________________________________________________________________________________________________
 //todo  4 Convert a Boolean to a String
@@ -69,7 +69,7 @@
 // }
 // _____________________________________________________________________________________________________
 //todo  8 Convert boolean values to strings 'Yes' or 'No'.
-//   let boolToWord = bool => bool === true ?`Yes` :  `No`; 
+//   let boolToWord = bool => bool === true ?`Yes` :  `No`;
 //   console.log(boolToWord(true));
 // _____________________________________________________________________________________________________
 //todo  9 Convert a String to a Number!
@@ -88,7 +88,7 @@
 // 	  return n-1;
 // 	} else if (n > 13) {
 // 	  return n-2;
-// 	} 
+// 	}
 // 	return n;
 //   }
 // _____________________________________________________________________________________________________
@@ -217,11 +217,11 @@
 // _____________________________________________________________________________________________________
 //todo 14 Correct the mistakes of the character recognition software
 // function correct(string){
-// 	return [...string].map( (char) => +char === 5 
+// 	return [...string].map( (char) => +char === 5
 //                               ? char = `S`
 //                               : char.charCodeAt() === 48  						//* супер выкрутился
 //                               ? char = `O`
-//                               : +char === 1 
+//                               : +char === 1
 //                               ? char = `I`
 //                               : char
 //   ).join(``);
@@ -295,7 +295,7 @@
 // _____________________________________________________________________________________________________
 // todo 19  Can we divide it?
 // function isDivideBy(number, a, b) {
-// 	return number % a === 0 && number % b === 0 ? true : false; 
+// 	return number % a === 0 && number % b === 0 ? true : false;
 //   }
 //   console.log(isDivideBy(45, -5, 9));
 // _____________________________________________________________________________________________________
@@ -343,15 +343,15 @@
 //   _____________________________________________________________________________________________________
 // todo 25 Twice as old
 // function twiceAsOld(dadYearsOld, sonYearsOld) {
-// 	let differenceOld = dadYearsOld - sonYearsOld; 
+// 	let differenceOld = dadYearsOld - sonYearsOld;
 // 	sonYearsOld = 0;
 // 	for (;;) {
 // 		if (differenceOld/sonYearsOld === 2) {
 // 			return Math.abs(dadYearsOld-differenceOld);
-// 		} 
+// 		}
 // 		differenceOld++;
 // 		sonYearsOld++;
-// 	} 
+// 	}
 // }
 // console.log(twiceAsOld(55, 30));
 // _____________________________________________________________________________________________________
@@ -459,8 +459,8 @@
 // _____________________________________________________________________________________________________
 // todo 42 Opposites Attract
 // function lovefunc(flower1, flower2){
-//   return flower1 % 2 === 0 && flower2 % 2 !== 0 
-//           || flower1 % 2 !== 0 && flower2 % 2 === 0 ? true : false; 
+//   return flower1 % 2 === 0 && flower2 % 2 !== 0
+//           || flower1 % 2 !== 0 && flower2 % 2 === 0 ? true : false;
 // }
 // _____________________________________________________________________________________________________
 // //*Лучшее решение
@@ -482,7 +482,7 @@
 // let summation = function (num) {
 //   let sum = 0;
 //   for (let i = 1; i <= num; i++){
-//     sum += i; 
+//     sum += i;
 //   }
 //   return sum;
 // }
@@ -561,7 +561,7 @@
 // _____________________________________________________________________________________________________
 // todo 54 Sum The Strings
 // function sumStr(a,b) {
-//   return (+a + +b)+''  
+//   return (+a + +b)+''
 // }
 // _____________________________________________________________________________________________________
 // todo 55 Remove First and Last Character
@@ -595,7 +595,7 @@
 // console.log(squareArea(2));
 // _____________________________________________________________________________________________________
 // function squareArea(A){
-//   // Calculate the circumference of A 
+//   // Calculate the circumference of A
 //   const circumference = A * 4;
 //   // Calculate the radius of A
 //   const radius = circumference / (Math.PI * 2);
@@ -613,7 +613,7 @@
 // _____________________________________________________________________________________________________
 // todo 61 Thinkful - Logic Drills: Traffic light
 // function updateLight(current) {
-//   return current === 'green' ? 'yellow' : current === 'yellow' ? 'red' : "green"; 
+//   return current === 'green' ? 'yellow' : current === 'yellow' ? 'red' : "green";
 // }
 // _____________________________________________________________________________________________________
 // todo 62 Reversed sequence
@@ -681,7 +681,7 @@
 // _____________________________________________________________________________________________________
 // todo 70 Basic Mathematical Operations
 // function basicOp(operation, value1, value2){
-//   return operation === '+' ? value1+value2 : 
+//   return operation === '+' ? value1+value2 :
 //   operation === '-' ? value1-value2 :
 //   operation === '*' ? value1*value2 : value1/value2;
 // }
@@ -749,7 +749,7 @@
 // _____________________________________________________________________________________________________
 //* Лучшее решение
 // function betterThanAverage(classPoints, yourPoints) {
-//   return yourPoints > classPoints.reduce((a, b) => a + b, 0) / classPoints.length; 
+//   return yourPoints > classPoints.reduce((a, b) => a + b, 0) / classPoints.length;
 // }
 // _____________________________________________________________________________________________________
 // todo 74  Are You Playing Banjo?
@@ -802,7 +802,7 @@
 //     str += `${i} * ${number} = ${i*number}\n`
 //   }
 //   return str.trim();
-// } 
+// }
 // console.log(multiTable(5));
 // _____________________________________________________________________________________________________
 // todo 82 Enumerable Magic #25 - Take the First N Elements
@@ -812,8 +812,8 @@
 // _____________________________________________________________________________________________________
 // todo 83 Define a card suit
 // function defineSuit(card) {
-//   return card.includes(`♣`) ? `clubs` : card.includes(`♦`) 
-//     ? 'diamonds' : card.includes(`♥`) 
+//   return card.includes(`♣`) ? `clubs` : card.includes(`♦`)
+//     ? 'diamonds' : card.includes(`♥`)
 //     ? 'hearts' :'spades';
 // }
 // _____________________________________________________________________________________________________
@@ -853,7 +853,7 @@
 //   return a.filter((number, index) => a.indexOf(number) === index);
 // }
 // _____________________________________________________________________________________________________
-//* Лучшее решение 
+//* Лучшее решение
 // function distinct(a) {
 //   return [...new Set(a)];
 // }
@@ -864,29 +864,29 @@
 // }
 // console.log(hello(`anddr`));
 // _____________________________________________________________________________________________________
-//* Лучшее решение 
+//* Лучшее решение
 // const hello = s =>
 //   `Hello, ${s ? (s[0].toUpperCase() + s.slice(1).toLowerCase()) : 'World'}!`;
 // _____________________________________________________________________________________________________
 // todo 88 Name on billboard
 // function billboard(name, price = 30){
 //   return [...name].map( (char) => char = price).reduce((acc, num) => acc += num);
-// } 
+// }
 // _____________________________________________________________________________________________________
 // todo 89  All Star Code Challenge #18
-// function strCount(str, letter){  
+// function strCount(str, letter){
 //   return ([...str].filter((char) => char === letter)).length
 // }
 // _____________________________________________________________________________________________________
 // //* Лучшее решение
-// function strCount(str, letter){  
+// function strCount(str, letter){
 //   return str.split(letter).length-1
 // }
 // _____________________________________________________________________________________________________
 // todo 90 Short Long Short
 // function solution(a, b){
 //   return a.length > b.length ? b+a+b : a+b+a;
-// } 
+// }
 // _____________________________________________________________________________________________________
 //todo  91 MakeUpperCase
 // function makeUpperCase(str) {
@@ -940,14 +940,14 @@
 // #2
 // String.prototype.toAlternatingCase = function () {
 //   let arr = [65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90];
-//   return [...this].map((char) => arr.includes(char.codePointAt(0)) ? char.toLowerCase() : char.toUpperCase()).join(``); 
+//   return [...this].map((char) => arr.includes(char.codePointAt(0)) ? char.toLowerCase() : char.toUpperCase()).join(``);
 // }
 // _____________________________________________________________________________________________________
 //todo  99  Exclamation marks series #2: Remove all exclamation marks from the end of sentence
 // function remove(s){
 //   if(!s.endsWith(`!`)){
-//     return s   
-// } 
+//     return s
+// }
 //   s = s.slice(0, s.length-1);
 //   return remove(s);
 // }
@@ -975,7 +975,7 @@
 //   return a-b;
 // }
 // _____________________________________________________________________________________________________
-//todo  101 Compare within margin 
+//todo  101 Compare within margin
 // function closeCompare(a, b, margin = 0){
 //   return Math.abs(a - b) <= margin || a - b === 0 ? 0 : a - b > 0 ?  1 : -1;
 // }
@@ -991,7 +991,7 @@
 //     return [];
 //   }
 //   let positive = input.reduce ((acc, num) => num > 0 ? acc = ++acc : acc, 0);
-//   let negative = input.reduce ((acc, number) => number < 0 ? acc += number: acc, 0); 
+//   let negative = input.reduce ((acc, number) => number < 0 ? acc += number: acc, 0);
 //   let arr = [positive, negative];
 //   return arr;
 // }
@@ -1035,7 +1035,7 @@
 //todo  108  Well of Ideas - Easy Version
 // function well(x){
 //   return x.filter((item) => item === 'good').length > 2 ? 'I smell a series!'
-//    : x.filter((item) => item === 'good').length > 0 ? 'Publish!' 
+//    : x.filter((item) => item === 'good').length > 0 ? 'Publish!'
 //    : 'Fail!'
 // }
 // _____________________________________________________________________________________________________
@@ -1080,7 +1080,7 @@
 // }
 // _____________________________________________________________________________________________________
 //todo  116 Gravity Flip
-// const flip = (d, a) => d === 'R' ? a.sort((a, b) => a - b) : a.sort((a,b) => b - a) ; 
+// const flip = (d, a) => d === 'R' ? a.sort((a, b) => a - b) : a.sort((a,b) => b - a) ;
 // _____________________________________________________________________________________________________
 //todo  117 Cat years, Dog years
 // let humanYearsCatYearsDogYears = function(humanYears) {
@@ -1155,7 +1155,7 @@
 //   return arr;
 // }
 // _____________________________________________________________________________________________________
-//! //* Лучшее решение 
+//! //* Лучшее решение
 // const preFizz = n => Array.from({length: n}, (_, i) => i + 1)
 // _____________________________________________________________________________________________________
 //todo  125 Price of Mangoes
@@ -1202,7 +1202,7 @@
 // _____________________________________________________________________________________________________
 //todo  130 101 Dalmatians - squash the bugs, not the dogs!
 // function howManyDalmatians (number) {
-//   let dogs  = ["Hardly any", "More than a handful!", "Woah that's a lot of dogs!", "101 DALMATIANS!!!"] 
+//   let dogs  = ["Hardly any", "More than a handful!", "Woah that's a lot of dogs!", "101 DALMATIANS!!!"]
 //   let respond = number <= 10 ? dogs[0] : number <= 50 ? dogs[1] : number === 101 ? dogs[3] : dogs[2];
 //   return respond;
 // }
@@ -1263,7 +1263,7 @@
 // _____________________________________________________________________________________________________
 //todo  139 Did she say hallo?
 // function validateHello(greetings) {
-//   return /(hello|ciao|salut|hallo|hola|ahoj|czesc)/i.test(greetings) 
+//   return /(hello|ciao|salut|hallo|hola|ahoj|czesc)/i.test(greetings)
 //  }
 //* Лучшеее решение
 // const validateHello = greetings => /h[ae]llo|ciao|salut|hola|ahoj|czesc/i.test(greetings);
@@ -1309,7 +1309,7 @@
 //todo 146 A wolf in sheep's clothing
 // function warnTheSheep(queue) {
 //   return queue.indexOf(`wolf`) === queue.length-1 ? "Pls go away and stop eating my sheep" : `Oi! Sheep number ${queue.length - 1 - queue.indexOf(`wolf`)}! You are about to be eaten by a wolf!`;
-// } 
+// }
 // _____________________________________________________________________________________________________
 //todo 147  Total pressure calculation
 // function solution(M1, M2, m1, m2, V, T) {
@@ -1325,7 +1325,7 @@
 //   let average = (s1+s2+s3)/3
 //   return  average < 60 ? `F` : average < 70
 //                        ? `D` : average < 80
-//                        ? `C` : average < 90 
+//                        ? `C` : average < 90
 //                        ? `B` : `A`;
 // }
 // _____________________________________________________________________________________________________
@@ -1402,7 +1402,7 @@
 // }
 // _____________________________________________________________________________________________________
 //todo 159 Find the position!
-// function position(letter){  
+// function position(letter){
 //   let arr = [];
 //   for(let i = 97; i <= 122; i++){
 //       arr.push(String.fromCodePoint(i));
@@ -1433,7 +1433,7 @@
 //   for(let i = 0; i < sortArr.length; i++){
 //     if (sortArr[i+1] === undefined) {
 //       break;
-//     } 
+//     }
 //     sum += sortArr[i] - sortArr[i+1];
 //   }
 //   return sum
@@ -1463,7 +1463,7 @@
 // _____________________________________________________________________________________________________
 //todo 164 Holiday VI - Shark Pontoon
 // function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
-//   return pontoonDistance/youSpeed < sharkDistance/sharkSpeed ?  "Alive!" 
+//   return pontoonDistance/youSpeed < sharkDistance/sharkSpeed ?  "Alive!"
 //         : dolphin && pontoonDistance/youSpeed < sharkDistance/(sharkSpeed/2) ? "Alive!" : "Shark Bait!";
 // }
 // _____________________________________________________________________________________________________
@@ -1489,7 +1489,7 @@
 // }
 // console.log(countSheeps(arr));
 // _____________________________________________________________________________________________________
-// * ЛУЧШЕЕ РЕШЕНИЕ 
+// * ЛУЧШЕЕ РЕШЕНИЕ
 // function countSheeps(arrayOfSheeps) {
 // 	return arrayOfSheeps.filter(Boolean).length;
 //   }
@@ -1507,7 +1507,7 @@
 // }
 // console.log(xz(name));
 // _____________________________________________________________________________________________________
-// * ЛУЧШЕЕ РЕШЕНИЕ 
+// * ЛУЧШЕЕ РЕШЕНИЕ
 // function abbrevName(name){
 // 	var nameArray = name.split(" ");
 // 	return (nameArray[0][0] + "." + nameArray[1][0]).toUpperCase();
@@ -1524,7 +1524,7 @@
 // 	}
 // }
 // _____________________________________________________________________________________________________
-// * ЛУЧШЕЕ РЕШЕНИЕ 
+// * ЛУЧШЕЕ РЕШЕНИЕ
 // const phrases = [
 //     'I love you',
 //     'a little',
@@ -1534,7 +1534,7 @@
 //     'not at all',
 // ]
 // function howMuchILoveYou(n) {
-//      return phrases[(n - 1) % phrases.length] 
+//      return phrases[(n - 1) % phrases.length]
 // }
 // ____________________________________________________________________________________________________
 // TODO 171. Filter out the geese
@@ -1544,7 +1544,7 @@
 // 	return arr2;
 //   };
 //   _____________________________________________________________________________________________________
-// * ЛУЧШЕЕ РЕШЕНИЕ 
+// * ЛУЧШЕЕ РЕШЕНИЕ
 //   function gooseFilter (birds) {
 // 	var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
 // 	return birds.filter(b => !geese.includes(b));
@@ -1559,7 +1559,7 @@
 // 		return arr.slice(1, arr.length-1).join(` `);
 // }
 // _____________________________________________________________________________________________________
-// * ЛУЧШЕЕ РЕШЕНИЕ 
+// * ЛУЧШЕЕ РЕШЕНИЕ
 // function array(arr){
 // 	return arr.split(",").slice(1,-1).join(" ") || null;
 // }
@@ -1609,7 +1609,7 @@
 //TODO 178. Sum of positive
 // let arr = [1,-4,7,12];
 // function positiveSum (arr) {
-// 	return arr.reduce( (acc, number) => number > 0 ? acc += number : acc, 0); 
+// 	return arr.reduce( (acc, number) => number > 0 ? acc += number : acc, 0);
 // }
 // console.log(positiveSum(arr));
 // _____________________________________________________________________________________________________
@@ -1631,10 +1631,10 @@
 // 		});
 // 		if (b === undefined) {
 // 			return null;
-// 		} 
+// 		}
 // 		return b;
 // }
-// console.log(firstNonConsecutive(array)); 
+// console.log(firstNonConsecutive(array));
 // _____________________________________________________________________________________________________
 //  * ЛУЧШЕЕ РЕШЕНИЕ
 // function firstNonConsecutive(arr) {
@@ -1645,7 +1645,7 @@
 // 	}
 // 	return null
 //   }
-//   _____________________________________________________________________________________________________ 
+//   _____________________________________________________________________________________________________
 //  * ЛУЧШЕЕ РЕШЕНИЕ
 // function firstNonConsecutive (arr) {
 //     let result = arr.find((val, index) => val !== index + arr[0]);
@@ -1665,7 +1665,7 @@
 //   else
 //     return (c + " is freezing temperature")
 //   }
-//   _____________________________________________________________________________________________________ 
+//   _____________________________________________________________________________________________________
 //  * ЛУЧШЕЕ РЕШЕНИЕ
 // const weatherInfo = temperature => temperatureMesage(convertToCelsius(temperature));
 // const convertToCelsius = temperature => (temperature - 32) * (5 / 9);
@@ -1715,7 +1715,7 @@
 // 	}
 // 	return arr;
 //   }
-//   _____________________________________________________________________________________________________ 
+//   _____________________________________________________________________________________________________
 //  * ЛУЧШЕЕ РЕШЕНИЕ
 // const arr = n => Array.from({length: n}, (_, i) => i);
 // _____________________________________________________________________________________________________
@@ -1761,7 +1761,7 @@
 // 	swedish: 'Valkommen',
 // 	welsh: 'Croeso'
 // 	}
-	
+
 // function greet(language) {
 // 	  return greets[language] || greets.english
 // }
@@ -1800,26 +1800,26 @@
 // _____________________________________________________________________________________________________
 //TODO 194 Total amount of points
 // function points(games) {
-// 	return games.reduce((acc, item) => +item[0] > +item[2] ? acc += 3 
+// 	return games.reduce((acc, item) => +item[0] > +item[2] ? acc += 3
 // 									:  +item[0] === +item[2] ? acc += 1 : acc , 0)
 //   }
 // _______
 // let arr =  ['1:0','2:0','3:0','4:0'];
 // console.log(+arr[0][0]);
 // _____________________________________________________________________________________________________
-//TODO 195 Is the string uppercase?   - спросить что за шняга 
+//TODO 195 Is the string uppercase?   - спросить что за шняга
 // String.prototype.isUpperCase = function() {
 // 	return this.toUpperCase() !== this.toString() ? false : true;
 // }
 // _____________________________________________________________________________________________________
 //TODO 196 SpeedCode #2 - Array Madness
 // function arrayMadness(a, b) {
-// 	return a.map((item) => item = item**2).reduce((acc, num) => acc += num) > 
+// 	return a.map((item) => item = item**2).reduce((acc, num) => acc += num) >
 // 		   b.map((item) => item = item**3).reduce((acc, num) => acc += num);
 //   }
-//   _____________________________________________________________________________________________________ 
+//   _____________________________________________________________________________________________________
 //  * ЛУЧШЕЕ РЕШЕНИЕ
-// const arrayMadness = (a, b) => a.reduce((acc, x) => acc + x**2, 0) > b.reduce((acc, x) => acc + x**3, 0) 
+// const arrayMadness = (a, b) => a.reduce((acc, x) => acc + x**2, 0) > b.reduce((acc, x) => acc + x**3, 0)
 // _____________________________________________________________________________________________________
 //TODO 197 Polish alphabet
 // let alphabet = {
@@ -1833,7 +1833,7 @@
 // 	ź: "z",
 // 	ż: "z"
 //   }
-  
+
 //   function correctPolishLetters (string) {
 // 	return string.replace(/[ąćęłńóśźż]/g, char => alphabet[char] || char);
 // }
@@ -1843,7 +1843,7 @@
 // 	let sortAges = ages.sort((a, b) => a - b);
 // 	return [ sortAges[0], sortAges[sortAges.length -1], sortAges[sortAges.length - 1] - sortAges[0]];
 //}
-//   _____________________________________________________________________________________________________ 
+//   _____________________________________________________________________________________________________
 //  * ЛУЧШЕЕ РЕШЕНИЕ
 // function differenceInAges (ages) {
 //     let max = Math.max(...ages),
@@ -1885,7 +1885,7 @@
 // function xor(a, b) {
 // 	return a === true && a === b ? false : a === false && a === b ? false : true;
 //   }
-//   _____________________________________________________________________________________________________ 
+//   _____________________________________________________________________________________________________
 //  * ЛУЧШЕЕ РЕШЕНИЕ
 // function xor(a, b) {
 // 	return a != b;
@@ -1926,7 +1926,7 @@
 // 	}
 // 	return arr;
 //   }
-//   _____________________________________________________________________________________________________ 
+//   _____________________________________________________________________________________________________
 //  * ЛУЧШЕЕ РЕШЕНИЕ
 // function monkeyCount(n) {
 // 	return Array.from({length:n}, (_,i)=>i+1)
@@ -1936,12 +1936,12 @@
 // function calculateTip(amount, rating) {
 // 	let rating1 = rating.toLowerCase();
 // 	return rating1 === "terrible" ? 0
-// 	: rating1 === "poor" ? Math.ceil(amount*0.05) 
+// 	: rating1 === "poor" ? Math.ceil(amount*0.05)
 // 	: rating1 === "good" ? Math.ceil(amount*0.1)
 // 	: rating1 === "great" ? Math.ceil(amount*0.15)
 // 	: rating1 === "excellent" ? Math.ceil(amount*0.2) : "Rating not recognised"
 //   }
-//   _____________________________________________________________________________________________________ 
+//   _____________________________________________________________________________________________________
 //  * ЛУЧШЕЕ РЕШЕНИЕ
 // const TIPS = {
 // 	"terrible": 0.0,
@@ -1950,10 +1950,10 @@
 // 	"great": 0.15,
 // 	"excellent": 0.2
 //   };
-  
+
 //   const calculateTip = (amount, rating) => {
 // 	rating = rating.toLowerCase();
-	
+
 // 	return rating in TIPS ? Math.ceil(TIPS[rating] * amount) : "Rating not recognised";
 //   };
 // _____________________________________________________________________________________________________
@@ -1969,13 +1969,13 @@
 // _____________________________________________________________________________________________________
 //TODO 213 For UFC Fans (Total Beginners): Conor McGregor vs George Saint Pierre
 // var quote = function(fighter) {
-// 	return fighter.toLowerCase() === `conor mcgregor` ? "I'd like to take this chance to apologize.. To absolutely NOBODY!" 
+// 	return fighter.toLowerCase() === `conor mcgregor` ? "I'd like to take this chance to apologize.. To absolutely NOBODY!"
 // 	: "I am not impressed by your performance.";
 //   }
 // _____________________________________________________________________________________________________
 //TODO 214 Be Concise I - The Ternary Operator
 // let describeAge = (age, str = "You're a(n) ") => age <= 12 ? str+"kid" : age <= 17 ? str+"teenager" : age <= 64 ? str+"adult" : str+"eldery";
-//   _____________________________________________________________________________________________________ 
+//   _____________________________________________________________________________________________________
 //  * ЛУЧШЕЕ РЕШЕНИЕ
 // var describeAge=a=>`You're a(n) ${a<13?"kid":a<18?"teenager":a<65?"adult":"elderly"}`;
 // ____________________ _________________________________________________________________________________
@@ -1993,7 +1993,7 @@
 // function isLockNessMonster(s) {
 // 	return s.includes("tree fiddy") || s.includes("3.50");
 //   }
-//   _____________________________________________________________________________________________________ 
+//   _____________________________________________________________________________________________________
 //  * ЛУЧШЕЕ РЕШЕНИЕ
 // function isLockNessMonster(s) {
 // 	return /3\.50|th?ree fi(?:ft|dd)y/g.test(s);
@@ -2002,7 +2002,7 @@
 //TODO 218 Simple Fun #1: Seats in Theater
 // function seatsInTheater(nCols, nRows, col, row) {
 // 	return (nRows-row)*(nCols-col+1);
-//   } 
+//   }
 // ____________________ _________________________________________________________________________________
 //TODO 219 A Needle in the Haystack
 // function findNeedle(haystack) {
@@ -2015,7 +2015,7 @@
 // 	for(let i = 1; i <= p-1; i++){
 // 	  sum *= i;
 // 	}
-// 	return Number.isInteger((sum+1)/(p*p)); 
+// 	return Number.isInteger((sum+1)/(p*p));
 //   }
 // ____________________ _________________________________________________________________________________
 //TODO 221 Grasshopper - Terminal game combat function
@@ -2037,10 +2037,10 @@
 // function logicalCalc(array, op){
 // 	if(op === "AND" && array.includes(false)){
 // 	  return false
-// 	   } 
+// 	   }
 // 	if (op === "OR" && !array.includes(true)){
 // 	  return false;
-// 		} 
+// 		}
 // 	if (op === "XOR" && (array.filter((item) => item === true)).length%2 === 0){
 // 	  return false;
 //   }
@@ -2052,11 +2052,11 @@
 // 	let stairs = "I"
 // 	let space = " ";
 // 	for (let i = 1; i < n; i++){
-// 	  stairs += "\n"+space.repeat(i)+"I"  
+// 	  stairs += "\n"+space.repeat(i)+"I"
 // 	}
 // 	return stairs;
 // }
-//   _____________________________________________________________________________________________________ 
+//   _____________________________________________________________________________________________________
 //  * ЛУЧШЕЕ РЕШЕНИЕ
 // const drawStairs = n => [...Array(n)].map((_, i) => " ".repeat(i) + "I").join("\n");
 // _____________________________________________________________________________________________________
@@ -2073,7 +2073,7 @@
 // 	}
 // 	return undefined;
 //   }
-//   _____________________________________________________________________________________________________ 
+//   _____________________________________________________________________________________________________
 //  * ЛУЧШЕЕ РЕШЕНИЕ
 // function HQ9(code) {
 // 	switch (code) {
@@ -2083,7 +2083,7 @@
 // 	  default: return undefined;
 // 	}
 //   }
-  
+
 //   function beer(count) {
 // 	if (count === 2) {
 // 	  return '2 bottles of beer on the wall, 2 bottles of beer.\n' +
@@ -2113,7 +2113,7 @@
 // let countSheep = function (num){
 // 	let str = "";
 // 	for (let i = 1; i <= num; i++){
-// 	  str += `${i} sheep...`; 
+// 	  str += `${i} sheep...`;
 // 	}
 // 	return str;
 //   }
@@ -2126,7 +2126,7 @@
 // _____________________________________________________________________________________________________
 //TODO 231 Find out whether the shape is a cube
 // var cubeChecker = function(volume, side){
-// 	return volume <= 0 || side <= 0 ? false : volume/side === side*side ? true : false; 
+// 	return volume <= 0 || side <= 0 ? false : volume/side === side*side ? true : false;
 //   };
 // _____________________________________________________________________________________________________
 //TODO 232 Who is going to pay for the wall?
@@ -2141,30 +2141,30 @@
 // _____________________________________________________________________________________________________
 //TODO 234  Palindrome Strings
 // function isPalindrome(line) {
-// 	return typeof line === `string` ? [...line].reverse().join("") === line 
+// 	return typeof line === `string` ? [...line].reverse().join("") === line
 // 									: +([...`${line}`].reverse().join("")) === line;
 //   }
 // _____________________________________________________________________________________________________
 //TODO 235 Find the force of gravity between two objects
 // solution = (arr_val, arr_unit) => {
-// 	arr_unit[0] === `g`  ? arr_val[0] /= 1000 :  arr_unit[0] === `mg` 
-// 						 ? arr_val[0] /= 1e6 :  arr_unit[0] === `μg`  
+// 	arr_unit[0] === `g`  ? arr_val[0] /= 1000 :  arr_unit[0] === `mg`
+// 						 ? arr_val[0] /= 1e6 :  arr_unit[0] === `μg`
 // 						 ? arr_val[0] /= 1e9 :   arr_unit[0] === `lb`
 // 						 ? arr_val [0] *= 0.453592 : arr_val [0];
-	
-// 	 arr_unit[1] === `g` ? arr_val[1] /= 1000 :  arr_unit[1] === `mg` 
-// 						 ? arr_val[1] /= 1e6 :  arr_unit[1] === `μg`  
+
+// 	 arr_unit[1] === `g` ? arr_val[1] /= 1000 :  arr_unit[1] === `mg`
+// 						 ? arr_val[1] /= 1e6 :  arr_unit[1] === `μg`
 // 						 ? arr_val[1] /= 1e9 :   arr_unit[1] === `lb`
 // 						 ? arr_val [1] *= 0.453592 : arr_val [1];
-	 
+
 // 	 arr_unit[2] === `cm` ? arr_val[2] /= 100 : arr_unit[2] === `mm`
-// 						  ? arr_val[2] /= 1000 :  arr_unit[2] === `μm` 
+// 						  ? arr_val[2] /= 1000 :  arr_unit[2] === `μm`
 // 						  ? arr_val[2] /= 1e6 : arr_unit[2] === `ft`
 // 						  ? arr_val[2] *= 0.3048 : arr_val[2];
-	 
+
 // 	 return 6.67*(10**(-11))*arr_val[0]*arr_val[1]/arr_val[2]**2
 //    }
-  // _____________________________________________________________________________________________________ 
+// _____________________________________________________________________________________________________
 //  * ЛУЧШЕЕ РЕШЕНИЕ
 // function solution([m1,m2,d],[um1,um2,ud]) {
 // 	const G = 6.67e-11 ;
@@ -2177,13 +2177,13 @@
 //TODO 236 Exclamation marks series #6: Remove n exclamation marks in the sentence from left to right
 // function remove(s,n){
 // 	for(let i = 0; i < n; i++){
-// 	 s = s.replace("!", ""); 
-// 	} 
+// 	 s = s.replace("!", "");
+// 	}
 // 	return s;
 //   }
 // _____________________________________________________________________________________________________
 //TODO 237 Return the day
-// function whatday(num) { 
+// function whatday(num) {
 // 	switch(num) {
 // 		case 1: return `Sunday`;
 // 		case 2: return `Monday`;
@@ -2201,7 +2201,7 @@
 // 	let d = new Date();
 // 	return (d.getDate() === date.getDate() && d.getFullYear() === date.getFullYear() && d.getMonth() === date.getMonth());
 //   }
-//   _____________________________________________________________________________________________________ 
+//   _____________________________________________________________________________________________________
 //  * ЛУЧШЕЕ РЕШЕНИЕ
 // function isToday(date) {
 // 	return new Date().toDateString() === date.toDateString()
@@ -2211,20 +2211,20 @@
 // function howManydays(month){
 // 	switch (month){
 // 		case 1:
-// 		case 3: 
+// 		case 3:
 // 		case 5:
-// 		case 7: 
+// 		case 7:
 // 		case 8:
 // 		case 10:
 // 		case 12: return 31;
 // 		case 4:
-// 		case 6: 
+// 		case 6:
 // 		case 9:
 // 		case 11: return 30;
 // 		case 2: return 28;
 // 		default: return `Do not consider the leap year`
 // 	}
-//   _____________________________________________________________________________________________________ 
+//   _____________________________________________________________________________________________________
 //  * ЛУЧШЕЕ РЕШЕНИЕ
 // function howManydays(month){
 // 	switch (month){
@@ -2250,7 +2250,7 @@
 //TODO 242 Enumerable Magic #2 - True for Any?
 // function any(arr, fun){
 //   return arr.some(fun)
-// } 
+// }
 
 // _____________________________________________________________________________________________________
 //TODO 243 Classic Hello World
@@ -2264,7 +2264,7 @@
 // function dBScale(intensity) {
 //   return 10*Math.log10(intensity/Math.pow(10,-12));
 //  }
-//   _____________________________________________________________________________________________________ 
+//   _____________________________________________________________________________________________________
 //  * ЛУЧШЕЕ РЕШЕНИЕ
 // const dBScale = intensity => 10 * (12 + Math.log10(intensity));
 // _____________________________________________________________________________________________________
@@ -2338,7 +2338,7 @@
 //   }
 //   return sum;
 // }
-// console.log (sumMul(2,9)); 
+// console.log (sumMul(2,9));
 // _____________________________________________________________________________________________________
 //TODO 257 String cleaning
 // function stringClean(s){
@@ -2355,9 +2355,9 @@
 //   let a = "Who ate the last cookie? It was Zach!";
 //   let b = "Who ate the last cookie? It was Monica!";
 //   let c = "Who ate the last cookie? It was the dog!"
-//   return typeof x === `string` ? a : typeof x === `number` ? b : c;  
+//   return typeof x === `string` ? a : typeof x === `number` ? b : c;
 // }
-//   _____________________________________________________________________________________________________ 
+//   _____________________________________________________________________________________________________
 //  * ЛУЧШЕЕ РЕШЕНИЕ
 // function cookie(x) {
 //   var t = typeof x
@@ -2393,9 +2393,9 @@
 // _____________________________________________________________________________________________________
 //TODO 265 Is integer safe to use?
 // function SafeInteger(n) {
-//   return n < 9007199254740991 && Number.isInteger(n) 
+//   return n < 9007199254740991 && Number.isInteger(n)
 // }
-//   _____________________________________________________________________________________________________ 
+//   _____________________________________________________________________________________________________
 //  * ЛУЧШЕЕ РЕШЕНИЕ
 // function SafeInteger(n) {
 //   return Number.isSafeInteger(n);
@@ -2408,7 +2408,7 @@
 //   }
 //   constructor(firstName = 'John', lastName = 'Doe', age = 0, gender = 'Male'){
 //     this.firstName = firstName;
-//     this.lastName = lastName; 
+//     this.lastName = lastName;
 //     this.age = age;
 //     this.gender = gender;
 //   }
@@ -2416,7 +2416,7 @@
 //     return `${this.firstName} ${this.lastName}`;
 //   }
 // }
-//   _____________________________________________________________________________________________________ 
+//   _____________________________________________________________________________________________________
 //  * ЛУЧШЕЕ РЕШЕНИЕ
 // class Person {
 //   constructor(firstName = 'John', lastName = 'Doe', age = 0, gender = 'Male') {
@@ -2456,20 +2456,20 @@
 // _____________________________________________________________________________________________________
 //TODO 270 Training JS #7: if..else and ternary operator
 // function saleHotdogs(n){
-//   return  n < 5 ? n*100 : n >= 10 ? n*90 : n*95  
+//   return  n < 5 ? n*100 : n >= 10 ? n*90 : n*95
 // }
 // _____________________________________________________________________________________________________
 //TODO 271 Exclamation marks series #1: Remove an exclamation mark from the end of string
 // function remove(s){
 //   return s.endsWith("!") ? s.slice(0, -1) : s;
 // }
-//   _____________________________________________________________________________________________________ 
+//   _____________________________________________________________________________________________________
 //  * ЛУЧШЕЕ РЕШЕНИЕ
 // const remove = s => s.replace(/!$/, '');
 // _____________________________________________________________________________________________________
 //TODO 272 !a == a ?!
 // const a = `0`;
-//   _____________________________________________________________________________________________________ 
+//   _____________________________________________________________________________________________________
 //  * ЛУЧШЕЕ РЕШЕНИЕ
 // First
 // const a = []
@@ -2523,7 +2523,7 @@
 //   }
 //   return counter;
 // }
-//   _____________________________________________________________________________________________________ 
+//   _____________________________________________________________________________________________________
 //  * ЛУЧШЕЕ РЕШЕНИЕ
 // var hotpo = function(n, acc = 0) {
 //   if (n <= 1) {
@@ -2548,7 +2548,7 @@
 //     return `${this.name}s age is ${this.age}`
 //   }
 // }
-//   _____________________________________________________________________________________________________ 
+//   _____________________________________________________________________________________________________
 //  * ЛУЧШЕЕ РЕШЕНИЕ
 // class Person {
 //   constructor(name, age) {
@@ -2579,10 +2579,10 @@
 // _____________________________________________________________________________________________________
 //TODO 279 Age Range Compatibility Equation
 // function datingRange(age){
-//   return age > 14 ? `${ Math.floor(age/2) + 7 }-${ Math.floor(age - 7) * 2}` 
+//   return age > 14 ? `${ Math.floor(age/2) + 7 }-${ Math.floor(age - 7) * 2}`
 //                   : `${Math.floor(age - 0.10 * age)}-${Math.floor(age + 0.10 * age)}`
 // }
-//   _____________________________________________________________________________________________________ 
+//   _____________________________________________________________________________________________________
 //  * ЛУЧШЕЕ РЕШЕНИЕ
 // function datingRange(n) {
 //   return [n <= 14 ? 0.9 * n : 0.5 * n + 7, n <= 14 ? 1.1 * n : 2 * n - 14].map(Math.floor).join("-");
@@ -2608,7 +2608,7 @@
 //   return obj;
 // }
 // console.log(charFreq("I like cats"));
-//   _____________________________________________________________________________________________________ 
+//   _____________________________________________________________________________________________________
 //  * ЛУЧШЕЕ РЕШЕНИЕ -  НЕ ПОНЯЛ
 // function charFreq(message) {
 //   return message.split('').reduce(function(acc, cur) {
@@ -2623,14 +2623,14 @@
 //     this.crew = crew;
 //   }
 //   isWorthIt(){
-//     return this.draft - this.crew*1.5 > 20; 
+//     return this.draft - this.crew*1.5 > 20;
 //   }
 // }
 // _____________________________________________________________________________________________________
 //TODO 284 Grader
 //  const grader = score => score > 1 || score < 0.6 ? `F`
-// : score >= 0.9 && score <= 1 ? `A` 
-// : score >= 0.8 ? `B` 
+// : score >= 0.9 && score <= 1 ? `A`
+// : score >= 0.8 ? `B`
 // : score >= 0.7 ? `C`
 // : `D`
 // _____________________________________________________________________________________________________
@@ -2652,7 +2652,7 @@
 //       this.value = 0;
 //   }
 // }
-//   _____________________________________________________________________________________________________ 
+//   _____________________________________________________________________________________________________
 //  * ЛУЧШЕЕ РЕШЕНИЕ
 // function Counter() {
 //   this.value = 0;
@@ -2682,18 +2682,18 @@
 //TODO 288 Rock Paper Scissors!
 // const rps = (p1, p2) => {
 //   return p1 === p2 ? `Draw!`
-//   : p1 === 'scissors' && p2 === 'paper' || p1 === 'paper' && p2 === 'rock' || p1 === 'rock' && p2 === 'scissors' 
+//   : p1 === 'scissors' && p2 === 'paper' || p1 === 'paper' && p2 === 'rock' || p1 === 'rock' && p2 === 'scissors'
 //     ? `Player 1 won!` : `Player 2 won!`
 // };
-//   _____________________________________________________________________________________________________ 
+//   _____________________________________________________________________________________________________
 //  * ЛУЧШЕЕ РЕШЕНИЕ
 // const rps = (p1, p2) => {
 //   if(p1 === p2) {
 //     return 'Draw!'
-//   }; 
+//   };
 //   return `Player ${/rockscissors|scissorspaper|paperrock/.test(p1+p2)? 1 : 2} won!`;
 // }
-//   _____________________________________________________________________________________________________ 
+//   _____________________________________________________________________________________________________
 //  * ЛУЧШЕЕ РЕШЕНИЕ
 // const rps = (p1, p2) => {
 //   if (p1 === p2) return "Draw!";
@@ -2715,7 +2715,7 @@
 // function evil(n) {
 //   return (n.toString(2)+'').replace(/0/g, "").length%2 === 0 ?  "It's Evil!" : "It's Odious!";
 // }
-//   _____________________________________________________________________________________________________ 
+//   _____________________________________________________________________________________________________
 //  * ЛУЧШЕЕ РЕШЕНИЕ
 // function evil(n) {
 //   return n.toString(2).match(/1/g).length % 2 ? 'It\'s Odious!' : 'It\'s Evil!';
@@ -2737,16 +2737,16 @@
 // function contamination(text, char){
 //   return char.repeat(text.length)
 // }
-//   _____________________________________________________________________________________________________ 
+//   _____________________________________________________________________________________________________
 //  * ЕЩЁ ОДНО РЕШЕНИЕ
 // const contamination = (s,v) => s.replace(/./g,v);
 // _____________________________________________________________________________________________________
 //TODO 294 Simple Fun #261: Whose Move
 // function whoseMove(lastPlayer, win) {
-//   return (lastPlayer === `black` && win === false) 
+//   return (lastPlayer === `black` && win === false)
 //   || (lastPlayer === `white` && win === true) ? `white` : `black`;
 // }
-//   _____________________________________________________________________________________________________ 
+//   _____________________________________________________________________________________________________
 //  * ЛУЧШЕЕ РЕШЕНИЕ
 // function whoseMove(lastPlayer, win) {
 //   return win?lastPlayer:lastPlayer=="white"?"black":"white"
@@ -2768,10 +2768,10 @@
 // _____________________________________________________________________________________________________
 //TODO 297 Pole Vault Starting Marks
 //* Не работает
-// function startingMark(bodyHeight){ 
+// function startingMark(bodyHeight){
 //   return Math.round((8.27+(bodyHeight - 1.22) + ((bodyHeight - 1.22)*2.93333333))*100)/100;
 // }
-//   _____________________________________________________________________________________________________ 
+//   _____________________________________________________________________________________________________
 //  * ЕЩЁ ОДНО РЕШЕНИЕ РАБОЧЕЕ!
 // function startingMark(bodyHeight){
 //   const num = (10.67 - 9.45) / (1.83 - 1.52)
@@ -2780,7 +2780,7 @@
 // _____________________________________________________________________________________________________
 //TODO 298 isReallyNaN
 // const isReallyNaN = Number.isNaN;
-//   _____________________________________________________________________________________________________ 
+//   _____________________________________________________________________________________________________
 //  * ЕЩЁ ОДНО РЕШЕНИЕ
 // const isReallyNaN = (val) => Number.isNaN(val);
 // _____________________________________________________________________________________________________
@@ -2793,7 +2793,7 @@
 //   guess(n) {
 //     if (this.lives <= 0) throw new Error ('Expect error already dead');
 //     if (n === this.number) return true;
-//     this.lives--; 
+//     this.lives--;
 //     return false;
 // }
 // }
@@ -2805,7 +2805,7 @@
 // _____________________________________________________________________________________________________
 //TODO 300 To square(root) or not to square(root)
 // function squareOrSquareRoot(array) {
-//   return array.map((num) =>  Number.isInteger(Math.sqrt(num)) ? num = Math.sqrt(num) : num**2 );  
+//   return array.map((num) =>  Number.isInteger(Math.sqrt(num)) ? num = Math.sqrt(num) : num**2 );
 // }
 // console.log(squareOrSquareRoot([ 4, 3, 9, 7, 2, 1 ]));
 // _____________________________________________________________________________________________________
@@ -2851,9 +2851,9 @@
 //   return `a` === `b`;
 // }
 // _____________________________________________________________________________________________________
-//TODO 308 Plural 
+//TODO 308 Plural
 // function plural(n) {
-//   return n !== 1 
+//   return n !== 1
 // }
 // _____________________________________________________________________________________________________
 //TODO 309 Get number from string
@@ -2869,7 +2869,7 @@
 // _____________________________________________________________________________________________________
 //TODO 311 Training JS #6: Basic data types--Boolean and conditional statements if..else
 // function trueOrFalse(val){
-//   if (val) return "true";             
+//   if (val) return "true";
 //   else return "false";
 // }
 // _____________________________________________________________________________________________________
@@ -2898,7 +2898,7 @@
 // _____________________________________________________________________________________________________
 //TODO 317 Fuel Calculator
 // function fuelPrice(lit, pP) {
-//   let price = lit >= 12 ? pP - 0.25 : pP - (5*Math.floor(lit/2))/100; 
+//   let price = lit >= 12 ? pP - 0.25 : pP - (5*Math.floor(lit/2))/100;
 //   return +(lit*price).toFixed(2);
 // }
 // _____________________________________________________________________________________________________
@@ -2922,7 +2922,7 @@
 //TODO 319 Leonardo Dicaprio and Oscars
 // function leo(oscar){
 //   return oscar === 88 ? "Leo finally won the oscar! Leo is happy"
-//   : oscar === 86 ? "Not even for Wolf of wallstreet?!" 
+//   : oscar === 86 ? "Not even for Wolf of wallstreet?!"
 //   : oscar < 88 ? "When will you give Leo an Oscar?" : "Leo got one already!"
 // }
 // _____________________________________________________________________________________________________
@@ -3018,8 +3018,8 @@
 // _____________________________________________________________________________________________________
 //TODO 329 Training JS #31: methods of arrayObject---isArray() indexOf() and toString()
 // function blackAndWhite(arr){
-//   return !Array.isArray(arr) ? "It's a fake array" 
-//   : Array.isArray(arr) && arr.includes(5) && arr.includes(13) ?  "It's a black array" 
+//   return !Array.isArray(arr) ? "It's a fake array"
+//   : Array.isArray(arr) && arr.includes(5) && arr.includes(13) ?  "It's a black array"
 //   : "It's a white array";
 // }
 // _____________________________________________________________________________________________________
@@ -3044,7 +3044,7 @@
 //TODO 332  Training JS #17: Methods of String object--indexOf(), lastIndexOf() and search()
 // function firstToLast(str,c){
 //   return str.indexOf(c) > -1 && str.lastIndexOf(c) === str.indexOf(c) ? 0
-//         : str.indexOf(c) === -1 ? -1 
+//         : str.indexOf(c) === -1 ? -1
 //         : str.lastIndexOf(c) - str.indexOf(c);
 // }
 // _____________________________________________________________________________________________________
@@ -3062,15 +3062,15 @@
 //   if (r.length < 2) {r = "0" + r};
 //   if (g.length < 2) {g = "0" + g};
 //   if (b.length < 2) {b = "0" + b};
- 
+
 //     return "#"+r+g+b;
 // }
 // _____________________________________________________________________________________________________
 // function colorOf(r,g,b){
 //   var f = function (x) {
-//     return (x<16 ? '0' : '') + x.toString(16) 
+//     return (x<16 ? '0' : '') + x.toString(16)
 //   };
-  
+
 //   return "#" +  f(r) + f(g) + f(b);
 // }
 // _____________________________________________________________________________________________________
@@ -3083,10 +3083,10 @@
 // }
 // _____________________________________________________________________________________________________
 //TODO 336 Training JS #13: Number object and its properties
-// const whatNumberIsIt = n => isNaN(n) ? "Input number is Number.NaN" 
+// const whatNumberIsIt = n => isNaN(n) ? "Input number is Number.NaN"
 //                                       : n === Number.MAX_VALUE ? "Input number is Number.MAX_VALUE"
-//                                       : n === Number.MIN_VALUE ? "Input number is Number.MIN_VALUE" 
-//                                       : n === -Infinity ? "Input number is Number.NEGATIVE_INFINITY" 
+//                                       : n === Number.MIN_VALUE ? "Input number is Number.MIN_VALUE"
+//                                       : n === -Infinity ? "Input number is Number.NEGATIVE_INFINITY"
 //                                       : n === Infinity ? "Input number is Number.POSITIVE_INFINITY"
 //                                       : `Input number is ${n}`;
 // _____________________________________________________________________________________________________
@@ -3129,9 +3129,9 @@
 //  * ЛУЧШЕЕ РЕШЕНИЕ
 // function pickIt (arr) {
 //   let odd = []
-//   let even =[]  
+//   let even =[]
 //   for (let x of arr) {
-//       ((x % 2) ? odd : even).push(x)    
+//       ((x % 2) ? odd : even).push(x)
 //   }
 //   return [odd, even]
 // }
@@ -3157,7 +3157,7 @@
 //   return arr.pop();
 // }
 // function pushElement(arr){
-//   let i = 1;  
+//   let i = 1;
 //   arr.push(i)
 //   return arr;
 // }
@@ -3189,15 +3189,15 @@
 // }
 // _____________________________________________________________________________________________________
 //TODO 344 Training JS #2: Basic data types--Number
-// let v1 = 50, 
-//     v2 = 100, 
-//     v3 = 150, 
+// let v1 = 50,
+//     v2 = 100,
+//     v3 = 150,
 //     v4 = 200,
 //     v5 = 2,
 //     v6 = 250;
 // function equal1(){
-//   var a = v1   
-//   var b = v1   
+//   var a = v1
+//   var b = v1
 //   return a + b;
 // }
 
@@ -3283,11 +3283,11 @@
 //TODO 355 Implement Array.prototype.filter()
 // Array.prototype.filter = function (func) {
 //   let newArr = [];
-  
+
 //   for(let i = 0; i < this.length; i++){
 //     if(func(this[i])) newArr.push(this[i])
 //   }
-  
+
 //   return newArr;
 // }
 // _____________________________________________________________________________________________________
@@ -3537,7 +3537,7 @@
 //TODO 384 simple calculator
 // function calculator(a,b,sign){
 //  if(typeof a !== `number` || typeof b !== `number` || sign.match(/\+|-|\*|\//g) === null ){
-//     return "unknown value"; 
+//     return "unknown value";
 //    }
 //  switch(sign){
 //      case `+`: return a + b;
@@ -3567,15 +3567,33 @@
 //     this.side = Math.abs(n);
 //   }
 // }
+// ____________________________________________________________________________________________________
+//TODO 387  Check same case
+// function sameCase(a, b) {
+//   const smthWrongA = a.replace(/[a-z]/gi, "");
+//   const smthWrongB = b.replace(/[a-z]/gi, "");
+//   if (smthWrongA.length > 0 || smthWrongB.length > 0) return -1;
+//   if (
+//     (/[A-Z]/.test(a) && /[A-Z]/.test(b)) ||
+//     (/[a-z]/.test(a) && /[a-z]/.test(b))
+//   )
+//     return 1;
+//   return 0;
+// }
+// ____________________________________________________________________________________________________
+//TODO 388 Enumerable Magic #20 - Cascading Subsets
+// function eachCons(array, n) {
+// 	let newArr = array.map((_, index, arr) => arr.slice(index, index+n))
+//   return newArr.filter((item) => item.length === n)
+// }
+// ____________________________________________________________________________________________________
+//TODO 389 Help the Elite Squad of Brazilian forces BOPE
+// function magNumber(info){
+// 	let obj = {PT92: 17, M4A1: 30, M16A2: 30, PSG1: 5}
+// 	return Math.ceil(info[1]*3/obj[info[0]])
+//   }
 
-
-
-
-
-
-
-
-// //! TODO What's up next? НЕ РАБОТАЕТ РЕШЕНИЕ , ЧТО ЗА БРЕД?
+// //! TODO What's up next? НЕ РАБОТАЕТ РЕШЕНИЕ , ЧТО БРЕД?
 // function nextItem(xs, item) {
 // 	return xs.indexOf(item) === -1 ? undefined : xs[xs.indexOf(item)+1];
 //   }
@@ -3587,3 +3605,29 @@
 // 	  }
 // 	}
 //   }
+
+//!  поля объектов не могут называться с ``
+//TODO
+// var Obj = {
+//   ' ':'%20',
+//   ';':'%3B',
+//   "`":'%60',
+//   '"':'%22',
+//   '/':'%2F',
+//   '+':'%2B',
+//   ',':'%2C',
+//   '^':'%5E',
+//   '|':'%7C',
+//   '?':'%3F',
+//   '#':'%23',
+//   '$':'%24',
+//   '&':'%26',
+//   '}':'%7D',
+//   ':':'%3A',
+//   '{':'%7B',
+//   ']':'%5D',
+//   '[':'%5B',
+//   '@':'%40',
+//   '<':'%3C',
+//   '>':'%3E',
+// }

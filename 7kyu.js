@@ -479,7 +479,7 @@
 // 	return results[n] || 0
 //   }
 // ____________________________________________________
-//TODO 37 Count the Digit
+//TODO 37. Count the Digit
 // function nbDig(n, d) {
 //   let arrayNumbers = [];
 //   for (let i = 0; i <= n; i++) {
@@ -490,7 +490,7 @@
 //   return arrayNumbers.join("").match(re).length;
 // }
 // ____________________________________________________
-//TODO 38 Responsible Drinking
+//TODO 38. Responsible Drinking
 // function hydrate(s) {
 // 	let number = [...s.replace(/\D/g, "")].reduce((acc, str) => acc += Number(str), 0);
 // 	return  number === 1 ? `${number} glass of water` : `${number} glasses of water`
@@ -499,14 +499,14 @@
 //* Лучшее Решение
 // const hydrate = (s, w = [...s].filter(x => !isNaN(x)).reduce((a, b) => a + +b, 0)) => `${w} glass${w === 1 ? '' : 'es'} of water`;
 // ____________________________________________________
-//TODO 39 Battle of the characters (Easy)
+//TODO 39. Battle of the characters (Easy)
 // function battle(x, y) {
 //   let firstNum = [...x].reduce((acc, str) => acc + (str.charCodeAt() - 64), 0);
 //   let secondNum = [...y].reduce((acc, str) => acc + (str.charCodeAt() - 64), 0);
 //   return firstNum > secondNum ? x : secondNum > firstNum ? y : `Tie!`;
 // }
 // ____________________________________________________
-//TODO 40 Filter Long Words
+//TODO 40. Filter Long Words
 // function filterLongWords(sentence, n) {
 //   return sentence.split(' ').filter((item) => item.length > n);
 // }
@@ -581,7 +581,7 @@
 // console.log(lastIndexOf([1, 2, 3, 3], 3));
 
 // ____________________________________________________
-//TODO 45. Thinking & Testing : How many "word"?
+//TODO 44. Thinking & Testing : How many "word"?
 // function testit(s) {
 // 	const arrWord = s.toLowerCase().match(/[word]/gi);
 // 	const str = arrWord.join();
@@ -613,7 +613,7 @@
 // 	return (s.match(/w.*?o.*?r.*?d/ig) || []).length; 												*РАЗБРАТЬСЯ
 // }
 // ____________________________________________________
-//TODO 46.  Numerical Palindrome #1
+//TODO 45.  Numerical Palindrome #1
 // function palindrome(num) {
 //   if (typeof num !== "number" || num < 0 || !Number.isInteger(num)) {
 //     return "Not valid";
@@ -621,12 +621,12 @@
 //   return Number([...(num + "")].reverse().join("")) === num;
 // }
 // ____________________________________________________
-//TODO 47. Remove All The Marked Elements of a List
+//TODO 46. Remove All The Marked Elements of a List
 // Array.prototype.remove_ = function(arr, valuesArr){
 // 	return arr.filter((item, index) => !valuesArr.includes(item))
 //   }
 // ____________________________________________________
-//TODO 48. Simple Fun #144: Distinct Digit Year
+//TODO 47. Simple Fun #144: Distinct Digit Year
 // function distinctDigitYear(year) {
 //   for (let i = year + 1; ; i++) {
 //     let arr = i + "";
@@ -643,7 +643,7 @@
 // 	return year;
 //   }
 // ____________________________________________________
-//TODO 49. See You Next Happy Year
+//TODO 48. See You Next Happy Year
 // function nextHappyYear(year){
 // 	for (let i = year + 1; ; i++) {
 // 	  let arr = i + "";
@@ -660,7 +660,7 @@
 // 	return a;
 //   }
 // ____________________________________________________
-//TODO 50. Vowel Count
+//TODO 49. Vowel Count
 // function getCount(str) {
 //   let justVowelArr = str.match(/[aeiou]/gi);
 //   return justVowelArr ? justVowelArr.length : 0;
@@ -671,18 +671,18 @@
 // 	return (str.match(/[aeiou]/ig)||[]).length;
 //   }
 // ____________________________________________________
-//TODO 51. Square Every Digit
+//TODO 50. Square Every Digit
 // function squareDigits(num) {
 //   let arrNum = [...String(num)].map((item) => (+item) ** 2);
 //   return +arrNum.join("");
 // }
 // ____________________________________________________
-//TODO 52. Disemvowel Trolls
+//TODO 51. Disemvowel Trolls
 // function disemvowel(str) {
 //   return str.replace(/[aeiou]/gi, "");
 // }
 // ___________________________________________________
-//TODO 53. Highest and Lowest
+//TODO 52. Highest and Lowest
 // function highAndLow(numbers) {
 //   let arr = numbers.split(" ").map(Number);
 //   let maxNum = Math.max(...arr);
@@ -690,7 +690,7 @@
 //   return `${maxNum} ${minNum}`;
 // }
 // ___________________________________________________
-//TODO 54. Descending Order
+//TODO 53. Descending Order
 // function descendingOrder(n) {
 //   if (String(n).length < 2) return n;
 //   const arrNum = [...String(n)].map(Number).sort((a, b) => b - a);
@@ -702,14 +702,14 @@
 //   return parseInt(String(n).split("").sort().reverse().join(""));
 // }
 // ___________________________________________________
-//TODO 55. Get the Middle Character
+//TODO 54. Get the Middle Character
 // function getMiddle(s) {
 //   let l = s.length;
 //   if (l < 3) return s;
 //   return l % 2 === 0 ? s.slice(l / 2 - 1, l / 2 + 1) : s[Math.floor(l / 2)];
 // }
 // ___________________________________________________
-//TODO 56. You're a square!
+//TODO 55. You're a square!
 // let isSquare = function (n) {
 //   return Number.isInteger(Math.sqrt(n));
 // };
@@ -719,7 +719,7 @@
 //   return Math.sqrt(n) % 1 === 0;														Проверка на целое число  Math.sqrt(n) % 1 === 0
 // }
 // ___________________________________________________
-//TODO 57. Isograms
+//TODO 56. Isograms
 // function isIsogram(str){
 // 	return [...new Set(str.toLowerCase())].join("").length === str.length
 //   }
@@ -729,14 +729,14 @@
 // 	return new Set(str.toUpperCase()).size == str.length;
 //   }
 // ___________________________________________________
-//TODO 58. Exes and Ohs
+//TODO 57. Exes and Ohs
 // function XO(str) {
 // 	const x = str.match(/x/gi) || [];
 // 	const o = str.match(/o/gi) || [];
 //    return x.length === o.length
 //  }
 // ___________________________________________________
-//TODO 59. Shortest Word
+//TODO 58. Shortest Word
 // function findShort(s) {
 //   let resultStr = s
 //     .split(" ")
@@ -749,14 +749,14 @@
 //     return Math.min(...s.split(" ").map (s => s.length));
 // }
 // ___________________________________________________
-//TODO 60. Jaden Casing Strings
+//TODO 59. Jaden Casing Strings
 // function toJadenCase() {
 //   return this.split(" ")
 //     .map((word) => word[0].toUpperCase() + word.slice(1))
 //     .join(" ");
 // }
 // ___________________________________________________
-//TODO 61. Complementary DNA
+//TODO 60. Complementary DNA
 // let obj = {
 //     'A': 'T',
 //     'T': 'A',
@@ -782,7 +782,7 @@
 // 	G: 'C',
 //   }
 // ___________________________________________________
-//TODO 62. Credit Card Mask
+//TODO 61. Credit Card Mask
 // function maskify(cc) {
 // 	if (cc.length < 5) return cc;
 // 	let lengthCC = cc.length
@@ -794,7 +794,7 @@
 // 	return cc.slice(0, -4).replace(/./g, '#') + cc.slice(-4);
 //   }
 // ___________________________________________________
-//TODO 63. Beginner Series #3 Sum of Numbers
+//TODO 62. Beginner Series #3 Sum of Numbers
 // function getSum(a, b){
 // 	if( a === b ) return a;
 // 	let sum = 0;
@@ -813,19 +813,19 @@
 // 	return (max - min + 1) * (min + max) / 2;
 //   }
 // ___________________________________________________
-//TODO 64. Sum of two lowest positive integers
+//TODO 63. Sum of two lowest positive integers
 // function sumTwoSmallestNumbers(numbers) {
 // 	const sortArr = numbers.sort((a, b) => a - b);
 // 	return sortArr[0] + sortArr[1]
 //   }
 // ___________________________________________________
-//TODO 65.Two to One
+//TODO 64.Two to One
 // function longest(s1, s2) {
 //   const strNew = [...new Set([...(s1 + s2)])].sort().join("");
 //   return strNew;
 // }
 // ___________________________________________________
-//TODO 66. Growth of a Population
+//TODO 65. Growth of a Population
 // function nbYear(p0, percent, aug, p) {
 // 	let sum = Math.floor(p0);
 // 	for (let i = 0; ; i++) {
@@ -835,24 +835,24 @@
 // 	return i;
 //   }
 // ___________________________________________________
-//TODO 67.Find the next perfect square!
+//TODO 66.Find the next perfect square!
 // function findNextSquare(sq) {																ПРОВЕРКА НА ЦЕЛОЕ ЛИ ЧИСЛО    root % 1 === 0
 //   const sqNew = Math.sqrt(sq);
 //   if (!Number.isInteger(sqNew)) return -1;
 //   return (sqNew + 1) ** 2;
 // }
 // ___________________________________________________
-//TODO 68. Friend or Foe?
+//TODO 67. Friend or Foe?
 // function friend(friends){
 // 	return friends.filter((name) => name.length === 4);
 //   }
 // ___________________________________________________
-//TODO 69. Categorize New Member
+//TODO 68. Categorize New Member
 // function openOrSenior(data){
 // 	return data.map((player) => player[0] >= 55 && player[1] > 7 ? 'Senior' : 'Open')
 //   }
 // ___________________________________________________
-//TODO 70. Printer Errors
+//TODO 69. Printer Errors
 // function printerError(s) {
 //   const arrError = s.match(/[n-z]/gi);
 //   const countError = arrError === null ? 0 : arrError.length
@@ -862,7 +862,7 @@
 //* Лучшее Решение
 // const printerError = ($) => [ ($.match(/[n-z]/g) || []).length, $.length ].join('/')
 // ___________________________________________________
-//TODO 71.Regex validate PIN code
+//TODO 70.Regex validate PIN code
 // function validatePIN (pin) {
 //   if(/\D/.test(pin)) return false;
 //   return (pin.length === 4 || pin.length === 6) && /\d+/.test(pin)
@@ -873,24 +873,24 @@
 //   return /^(\d{4}|\d{6})$/.test(pin)
 // }
 // ___________________________________________________
-//TODO 72. Is this a triangle?
+//TODO 71. Is this a triangle?
 // function isTriangle(a,b,c){
 //   let max = Math.max(a, b, c);
 //    let sum = a + b + c;
 //    return sum - max > max;
 //  }
 // ___________________________________________________
-//TODO 73. Ones and Zeros
+//TODO 72. Ones and Zeros
 // const binaryArrayToNumber = arr => {
 //   return parseInt(+arr.join(''), 2)
 // };
 // ___________________________________________________
-//TODO 74.Number of People in the Bus
+//TODO 73.Number of People in the Bus
 // const number = function(busStops){
 //   return busStops.reduce((acc, arr) => acc+=arr[0]-arr[1], 0)
 // }
 // ___________________________________________________
-//TODO 75.Find the divisors!
+//TODO 74.Find the divisors!
 // function divisors(integer) {
 //   const arr = [];
 //   for(let i = 2; i < integer; i++) {
@@ -901,25 +901,25 @@
 //   return arr.length > 0 ? arr : `${integer} is prime`
 // };
 // ___________________________________________________
-//TODO 76. Odd or Even?
+//TODO 75. Odd or Even?
 // function oddOrEven(array) {
 //   if(array.length === 0) return 'even'
 //   return array.reduce((acc, num) => acc+=num) % 2 === 0 ? 'even' : 'odd'
 // }
 // ___________________________________________________
-//TODO 77. String ends with?
+//TODO 76. String ends with?
 // function solution(str, ending){
 //   const lengthEnding = ending.length;
 //   const substr = str.slice(str.length - lengthEnding);
 //   return substr === ending
 // }
 // ___________________________________________________
-//TODO 78. Reverse words
+//TODO 77. Reverse words
 // function reverseWords(str) {
 //   return str.split(" ").map((item) => [...item].reverse().join("")).join(" ");
 // }
 // ___________________________________________________
-//TODO 79. Remove the minimum
+//TODO 78. Remove the minimum
 // function removeSmallest(numbers) {
 //   let copyNumbers = [...numbers];
 //   if(numbers.length === 0 || numbers.length === 1 ) return [];
@@ -932,18 +932,18 @@
 //* Лучшее Решение
 // const removeSmallest = numbers => numbers.filter((n,i) => i !== numbers.indexOf(Math.min(...numbers)));
 // ___________________________________________________
-//TODO 80. The highest profit wins!
+//TODO 79. The highest profit wins!
 // function minMax(arr){
 // 	return [Math.min(...arr), Math.max(...arr)];
 //   }
 // ___________________________________________________
-//TODO 81. Testing 1-2-3
+//TODO 80. Testing 1-2-3
 // const number = function (array) {
 //   if (array.length === 0) return [];
 //   return array.map((item, index) => `${index + 1}: ${item}`);
 // };
 // ___________________________________________________
-//TODO 82. Don't give me five!
+//TODO 81. Don't give me five!
 // function dontGiveMeFive(start, end) {
 //   let counter = 0;
 //   for (let i = start; i < end + 1; i++) {
@@ -956,7 +956,7 @@
 //   return counter;
 // }
 // ___________________________________________________
-//TODO 83.Money, Money, Money
+//TODO 82.Money, Money, Money
 
 // function calculateYears(principal, interest, tax, desired) {
 // 	for(let i = 0; ; i++){
@@ -978,7 +978,7 @@
 // 	return calculateYears(principal, interest, tax, desired);
 //   }
 // ___________________________________________________
-//TODO 84. Find the stray number
+//TODO 83. Find the stray number
 // function stray(numbers) {
 // 	let newArr= numbers.sort((a,b) => a - b);
 // 	return newArr[newArr.length - 1] === newArr[newArr.length - 2] ? newArr[0] : newArr[newArr.length - 1];
@@ -988,13 +988,13 @@
 // const stray = nums => nums.reduce((a, b) => a ^ b);
 
 // ___________________________________________________
-//TODO 85. Breaking chocolate problem
+//TODO 84. Breaking chocolate problem
 // function breakChocolate(n, m) {
 //   if (n < 1 || m < 1) return 0;
 //   return n * m - 1;
 // }
 // ___________________________________________________
-//TODO 86. Count the divisors of a number
+//TODO 85. Count the divisors of a number
 // function getDivisorsCnt(n){
 //     let counter = 0;
 //     for(let i = 1; i <= n; i++) {
@@ -1003,7 +1003,7 @@
 //     return counter;
 // }
 // ___________________________________________________
-//TODO 87.Find the middle element
+//TODO 85.Find the middle element
 // function gimme(triplet) {
 //   const newArr = [...triplet].sort((a, b) => a - b); //!!!!!!!!!!!!!!!!!!!!! НЕ ЗАБЫВАЙ
 //   console.log(newArr);
@@ -1011,7 +1011,7 @@
 //   return triplet.indexOf(middleNum);
 // }
 // ___________________________________________________
-//TODO 88. Make a function that does arithmetic!
+//TODO 86. Make a function that does arithmetic!
 // function arithmetic(a, b, operator){
 // 	switch(operator){
 // 		case 'add': return a + b;
@@ -1029,7 +1029,7 @@
 // 	'divide'  : a / b
 //   }[operator]);
 // ___________________________________________________
-//TODO 89. Sum of a sequence
+//TODO 87. Sum of a sequence
 // const sequenceSum = (begin, end, step) => {
 // 	if(begin >= end) return 0;
 // 	let sum = 0;
@@ -1039,12 +1039,12 @@
 // 	return sum;
 //   };
 // ___________________________________________________
-//TODO 90. Sort array by string length
+//TODO 88. Sort array by string length
 // function sortByLength (array) {
 // 	return arr ay.sort((a, b) => a.length - b.length);
 //   };
 // ___________________________________________________
-//TODO 91.Round up to the next multiple of 5
+//TODO 89.Round up to the next multiple of 5
 // function roundToNext5(n){
 // 	if(n% 5 === 0 ) return n;
 // 	for(let i = n; ; i++){
@@ -1057,13 +1057,13 @@
 // 	return Math.ceil(n/5)*5;
 //   }
 // ___________________________________________________
-//TODO 92. Two Oldest Ages
+//TODO 90. Two Oldest Ages
 // function twoOldestAges(ages) {
 //   const newAges = [...ages].sort((a, b) => a - b);
 //   return newAges.slice(-2);
 // }
 // ___________________________________________________
-//TODO 93. Two fighters, one winner.
+//TODO 91. Two fighters, one winner.
 // function declareWinner(f1, f2, firstAttacker) {
 //   if (firstAttacker === f1.name) {
 //     return Math.ceil((f2.health - f1.damagePerAttack) / f1.damagePerAttack) >=
@@ -1079,18 +1079,7 @@
 //   }
 // }
 // ___________________________________________________
-//TODO 94. Sum of all the multiples of 3 or 5
-// function findSum(n) {
-// 	let sum = 0;
-// 	for(let i = 3; i <= n; i++) {
-// 	  if(i % 3 === 0 || i % 5 === 0) {
-// 		sum += i;
-// 	  }
-// 	}
-// 	return sum
-//   }
-// ___________________________________________________
-//TODO 95. Maximum Multiple
+//TODO 92. Maximum Multiple
 // function maxMultiple(divisor, bound){
 // 	return bound % divisor === 0 ? bound : Math.floor(bound / divisor) * divisor
 //   }
@@ -1100,14 +1089,14 @@
 //   return bound - (bound % divisor);
 // }
 // ___________________________________________________
-//TODO 96. Anagram Detection
+//TODO 93. Anagram Detection
 // let isAnagram = function (test, original) {
 //   let newTest = [...test.toLowerCase()].sort();
 //   let newOriginal = [...original.toLowerCase()].sort();
 //   return newTest.join("") === newOriginal.join("");
 // };
 // ___________________________________________________
-//TODO 97. Simple Fun #176: Reverse Letter
+//TODO 94. Simple Fun #176: Reverse Letter
 // function reverseLetter(str) {
 //   let newStr = str.replace(/\W|\d|_/gi, "");
 //   return [...newStr].reverse().join("");
@@ -1116,7 +1105,7 @@
 //* Лучшее Решение
 // reverseLetter=(s)=>s.replace(/[^a-z]/gi,'').split('').reverse().join('');
 // ___________________________________________________
-//TODO 98. Factorial   						РЕКУРСИЯ
+//TODO 95. Factorial   						РЕКУРСИЯ
 // let sum = 1;
 // function factorial(n) {
 //   if (n < 0 || n > 12) return throw new Error("RangeError");
@@ -1137,14 +1126,14 @@
 // 	return sum;
 //   }
 // ___________________________________________________
-//TODO 99.Summing a number's digits
+//TODO 96.Summing a number's digits
 // function sumDigits(number) {
 //   return [...String(number).replace(/\D/gi, "")]
 //     .map((num) => (num = Math.abs(+num)))
 //     .reduce((acc, num) => (acc += num));
 // }
 // ___________________________________________________
-//TODO 100. Check the exam
+//TODO 197. Check the exam
 // function checkExam(array1, array2) {
 //   const arr = array2.map((char, index) =>
 //     char === array1[index] ? 4 : char === "" ? 0 : -1
@@ -1153,12 +1142,12 @@
 //   return result < 0 ? 0 : result;
 // }
 // ___________________________________________________
-//TODO 101. Find the capitals
+//TODO 198. Find the capitals
 // const capitals = function (word) {
 // 	return [...word].map((char, index) => char.toUpperCase() === char ? index : -1).filter((num) => num >= 0)
 // };
 // ___________________________________________________
-//TODO 102. Small enough? - Beginner
+//TODO 99. Small enough? - Beginner
 
 // function smallEnough(a, limit) {
 //   const arrSort = a.sort((a, b) => a - b);
@@ -1171,18 +1160,18 @@
 // 	return Math.max(...a) <= limit
 //   }
 // ___________________________________________________
-//TODO 103. Form The Minimum
+//TODO 100. Form The Minimum
 // function minValue(values){
 // 	const newValues = [...(new Set(values))];
 // 	return +(newValues.sort((a,b) => a - b).join(''));
 //   }
 // ___________________________________________________
-//TODO 104. Remove anchor from URL
+//TODO 101. Remove anchor from URL
 // function removeUrlAnchor(url){
 // 	return url.replace(/(#.+)/gi, "");
 //   }
 // ___________________________________________________
-//TODO 105. Fix string case
+//TODO 102. Fix string case
 // function solve(s) {
 //   const newArr = [...s.replace(/\s/gi, "")];
 //   const countUpperCase = newArr.reduce(
@@ -1202,7 +1191,7 @@
 //     ? s.toUpperCase()
 //     : s.toLowerCase();
 // ___________________________________________________
-//TODO 106. Maximum Length Difference
+//TODO 102. Maximum Length Difference
 // function mxdiflg(a1, a2) {
 //   if (a1.length === 0 || a2.length === 0) return -1;
 //   const newA1 = a1.map((item) => item.length);
@@ -1227,31 +1216,31 @@
 //   );
 // }
 // ___________________________________________________
-//TODO 107. Alternate capitalization
+//TODO 103. Alternate capitalization
 // function capitalize(s){
 //   const oneArr =  [...s].map((str, index) => index%2 === 0 ? str.toUpperCase() : str);
 //   const secondArr = [...s].map((str, index) => index%2 !== 0 ? str.toUpperCase() : str);
 //   return [oneArr.join(""), secondArr.join("")];
 // };
 // ___________________________________________________
-//TODO 108. Remove duplicate words
+//TODO 104. Remove duplicate words
 // function removeDuplicateWords (s) {
 //   return [...new Set(s.split(' '))].join(" ");
 // }
 // ___________________________________________________
-//TODO 109. The Coupon Code
+//TODO 105. The Coupon Code
 // function checkCoupon(enteredCode, correctCode, currentDate, expirationDate){
 //   return enteredCode === correctCode && Date.parse(currentDate) <= Date.parse(expirationDate)
 // }
 // ___________________________________________________
-//TODO 110. Row Weights
+//TODO 106. Row Weights
 // function rowWeights(array){
 //   let arrTeamB =  array.filter((item, index) => index%2 === 0);
 //   let arrTeamA = array.filter((item, index) => index%2 !== 0);
 //   return [ arrTeamB.length === 0 ? 0 : arrTeamB.reduce((acc,num) => acc+=num), arrTeamA.length === 0 ? 0 : arrTeamA.reduce((acc, num) => acc+=num)]
 // }
 // ___________________________________________________
-//TODO 111. Factorial
+//TODO 107. Factorial
 // function factorial(n){
 //   let sum = 1;
 //   for(let i = n; i > 0 ; i--) {
@@ -1263,7 +1252,7 @@
 //* Лучшее Решение
 // const factorial = n => n ? factorial(n - 1) * n : 1;
 // ___________________________________________________
-//TODO 112. Deodorant Evaporator
+//TODO 108. Deodorant Evaporator
 // function evaporator(content, evap_per_day, threshold){
 //   let countDay = 0;
 //   let minVal = content*(threshold/100);
@@ -1273,12 +1262,12 @@
 //   }
 // }
 // ___________________________________________________
-//TODO 113. Sum of angles
+//TODO 109. Sum of angles
 // function angle(n) {
 //   return 180*(n-2)
 // }
 // ___________________________________________________
-//TODO 114. Sorted? yes? no? how?
+//TODO 110. Sorted? yes? no? how?
 // function isSortedAndHow(array) {
 //   const newArr = array.join();
 //   const ascending = [...array].sort((a,b) => a - b);
@@ -1290,12 +1279,12 @@
 //     : "no"
 // }
 // ___________________________________________________
-//TODO 115. Thinkful - String Drills: Repeater
+//TODO 111. Thinkful - String Drills: Repeater
 // function repeater(string, n){
 //   return string.repeat(n)
 // }
 // ___________________________________________________
-//TODO 116. Alphabet war
+//TODO 112. Alphabet war
 // function alphabetWar(fight) {
 //   let objLeft = {
 //     w: 4,
@@ -1325,7 +1314,7 @@
 //     : "Let's fight again!";
 // }
 // ___________________________________________________
-//TODO 117. Love vs friendship
+//TODO 113. Love vs friendship
 // function wordsToMarks(string){
 //   let objLetter = {
 //     a: 1,
@@ -1361,16 +1350,368 @@
 //* Лучшее Решение
 // const wordsToMarks = s => [...s].reduce((res, c) => res += c.charCodeAt() - 96, 0)
 // ___________________________________________________
-//TODO 118. Reverse a Number
+//TODO 114. Reverse a Number
 // function reverseNumber(n) {
 // 	let newNum = [...(Math.abs(n) + '')].reverse().join('');
 // 	return n >= 0 ? +newNum : -newNum;
 // 	}
 // ___________________________________________________
-//TODO 119. Coding Meetup #1 - Higher-Order Functions Series - Count the number of JavaScript developers coming from Europe
+//TODO 115. Coding Meetup #1 - Higher-Order Functions Series - Count the number of JavaScript developers coming from Europe
 // function countDevelopers(list) {
 // 	let filterList = list.filter((developer) => developer.continent === 'Europe' && developer.language === 'JavaScript')
 // 	return filterList.length
 //   }
+// ___________________________________________________
+//TODO 116. Predict your age!
+// function predictAge(...arr){
+// 	return Math.floor((Math.sqrt(arr.map((number) => number**2).reduce((acc,number) => acc += number)))/2)
+//  }
+// ____________________________________________________
+//* Лучшее Решение
+// function predictAge(...n){
+// 	return (Math.hypot(...n)/2)>>0
+//  }
+// ___________________________________________________
+//TODO 117. Sum of the first nth term of Series
+// function SeriesSum(n) {
+//   let sum = 1;
+//   if (n === 0) return "0.00";
+//   for (let i = 1; i < n; i++) {
+//     sum += 1 / (1 + 3 * i);
+//   }
+//   return sum.toFixed(2);
+// }
+// ___________________________________________________
+//TODO 118. Triangular Treasure
+// function triangular(n) {
+//   if (n < 1) return 0;
+//   return (n * (n + 1)) / 2;
+// }
+// ___________________________________________________
+//TODO 119. Find the vowels
+// function vowelIndices(word) {
+//   let arr = [...word].map((char, ind) =>
+//     "aeiouy".includes(char.toLowerCase()) ? (char = ind + 1) : char
+//   );
+//   return arr.filter((char) => typeof char === "number");
+// }
+// ___________________________________________________
+//TODO 120. Most digits
+// function findLongest(array) {
+//   return array.reduce((acc, num) =>
+//     acc.toString().length >= num.toString().length ? acc : num
+//   );
+// }
+// ___________________________________________________
+//TODO 121. Sum of Triangular Numbers
+// function sumTriangularNumbers(n) {
+//   if (n < 1) return 0;
+//   let sum = 0;
+//   for (let i = n; i > 0; i--) {
+//     sum += (i * (i + 1)) / 2;
+//     console.log(sum);
+//   }
+//   return sum;
+// }
+// ___________________________________________________
+//TODO 122. Even numbers in an array
+// function evenNumbers(array, number) {
+// 	const filteredArr = array.filter((num) => num%2 === 0);
+// 	return filteredArr.slice(-(number))
+//   }
+// ___________________________________________________
+//TODO 123. Maximum Product
+// function adjacentElementsProduct(array) {
+//   return array.reduce(
+//     (acc, num, index, arr) =>
+//       arr[index + 1] && num * arr[index + 1] > acc
+//         ? num * array[index + 1]
+//         : acc,
+//     array[0] * array[1]
+//   );
+// }
+// ___________________________________________________
+//TODO 124. No oddities here
+// function noOdds( values ){
+// 	return values.filter((item) => item % 2 === 0)
+//   }
+// ___________________________________________________
+//TODO 125. Bumps in the Road
+// function bump(x) {
+//   const numberN = (x.match(/n/gi) || []).length;
+//   return numberN > 15 ? "Car Dead" : "Woohoo!";
+// }
+// ___________________________________________________
+//TODO 126. Sum of odd numbers
+// function rowSumOddNumbers(n) {
+//   return n ** 3;
+// }
+// ___________________________________________________
+//TODO 127. Palindrome chain length
+//цикл
+// const palindromeChainLength = (n) => {
+// 	for (let i = 0; ; i++) {
+// 	  const reversedString = [...(n + "")].reverse().join("");
+// 	  if (reversedString === n + "") {
+// 		return i;
+// 	  }
+// 	  n += Number(reversedString);
+// 	}
+//   };
+
+//   console.log(palindromeChainLength(89));
+// ___________________________________________________
+// рекурсиЯ
+
+// function rowSumOddNumbers(n) {
+//   return n ** 3;
+// }
+
+// const getReversedString = (n) => {
+//   const reversedArr = [...(n + "")].reverse();
+//   return reversedArr.join("");
+// };
+
+// const isPalindrome = (n) => {
+//   console.log(getReversedString(n), n + "");
+//   return getReversedString(n) === n + "";
+// };
+
+// let counter = 0;
+
+// const palindromeChainLength = (n) => {
+//   if (isPalindrome(n)) {
+//     return counter;
+//   }
+//   counter++;
+
+//   const reversedNumber = +getReversedString(n);
+//   return palindromeChainLength(n + reversedNumber);
+// };
+// _________________________________________________________
+// ___________________________________________________
+//TODO 128. Fizz Buzz
+// const fizzbuzz = (n) => {
+//   const arr = [];
+//   for (let i = 1; i <= n; i++) {
+//     if (i % 3 === 0 && i % 5 === 0) {
+//       arr.push("FizzBuzz");
+//     } else if (i % 3 === 0) {
+//       arr.push("Fizz");
+//     } else if (i % 5 === 0) {
+//       arr.push("Buzz");
+//     } else {
+//       arr.push(i);
+//     }
+//   }
+//   return arr;
+// };
+// ____________________________________________________
+//* Лучшее Решение
+// let fizzify = fizzbuzz = function(n){
+//   return Array.apply(null, new Array(n)).map(function(e, i){
+//     return (++i % 3 ? '' : 'Fizz' ) + (i % 5 ? '' : 'Buzz') || i;
+//   });
+// }
+// ___________________________________________________
+//TODO 129. Halving Sum
+// function halvingSum(n) {
+// 	let sum = n;
+// 	for(let i = 2; i <= n; i *=2){
+// 		sum += Math.floor(n/i)
+// 	}
+// 	return sum
+//   }
+// ___________________________________________________
+//TODO 130. Minimize Sum Of Array (Array Series #1)
+// function minSum(arr) {
+//   const sortedArr = [...arr].sort((a, b) => a - b);
+//   console.log(sortedArr);
+//   return (
+//     sortedArr.reduce(
+//       (acc, num, index, arr) => (acc += num * arr[arr.length - (index + 1)]),
+//       0
+//     ) / 2
+//   );
+// }
+// ___________________________________________________
+//TODO 131. Alphabet symmetry
+
+// const alphabet = ["a", "b", "c", "d", "e",  "f", "g","h", "i", "j", "k", "l", "m",
+//					 "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+// function solve(arr) {
+//   return arr.map((str) =>
+//     [...str].reduce(
+//       (acc, char, index) =>
+//         (acc += char.toLowerCase() === alphabet[index] ? 1 : 0),
+//       0
+//     )
+//   );
+// }
+// ___________________________________________________
+//TODO 132. Power of two
+// function isPowerOfTwo(n){
+// 	for (let i = n; i >= 1; i/=2) {
+// 	  if (i === 2 || i === 1) return true;
+// 	}
+// 	return false
+//   }
+
+// function isPowerOfTwo(n){  					- не работает с большими числами
+// 	return ( Math.log(n) / Math.log(2) )%1 === 0													//!Проверка на целое ли число %1 === 0
+//    }
+// ____________________________________________________
+//* Лучшее Решение
+// function isPowerOfTwo(n){
+//     return Number.isInteger(Math.log2(n));											//! Проверка через логарифм является ли число степенью
+// }
+// ___________________________________________________
+//TODO 133. Greet Me
+// const greet = (name) => {
+// 	let changedName = name[0].toUpperCase() + name.slice(1).toLowerCase()
+// 	return `Hello ${changedName}!`
+//   };
+// _____________________________________________________________________________________________________________________________________
+//TODO 134. Boiled Eggs
+// function cookingTime(eggs) {
+// 	return eggs > 8 ? Math.ceil(eggs/8)*5 : eggs > 0 ? 5 : 0
+//   }
+// _____________________________________________________________________________________________________________________________________
+//TODO 135. Find the nth Digit of a Number
+// const findDigit = function(num, nth){
+// 	num = Math.abs(num);
+// 	if(nth <= 0) return -1;
+// 	if (String(num).length < nth) return 0;
+// 	let arrReversedString = [...String(num)].reverse();
+// 	return +arrReversedString[nth-1]
+//   }
+// _____________________________________________________________________________________________________________________________________
+//TODO 136. Sum of Cubes
+// function sumCubes(n){
+// 	let sum = 0;
+// 	for (let i = 0; i <= n; i++){
+// 	  sum += i**3;
+// 	}
+// 	return sum
+//   }
+// _____________________________________________________________________________________________________________________________________
+//TODO 137.Gauß needs help! (Sums of a lot of numbers).
+// const  f = (n) => n > 0 && n%1 === 0 ? ((1+n)/2)*n : false
+// _____________________________________________________________________________________________________________________________________
+//TODO 138. Simple beads count
+// function countRedBeads(n) {
+// 	return n < 2 ? 0 : (n-1)*2
+//   }
+// _____________________________________________________________________________________________________________________________________
+//TODO 139. Sort the Gift Code
+// function sortGiftCode(code){
+// 	return [...code].sort().join("")
+//   }
+
+// _____________________________________________________________________________________________________________________________________
+//TODO 140. Alphabetical Addition
+// function addLetters(...letters) {
+//   if (letters.length === 0) return "z";
+//   let sum = letters.reduce((acc, char) => (acc += char.charCodeAt() - 96), 0);
+//   let koff = sum > 26 ? Math.floor(sum / 26) : 1;
+//   if (sum - 26 * koff === 0) return "z";
+//   if (sum > 26) return String.fromCodePoint(sum - 26 * koff + 96);
+//   return String.fromCodePoint(sum + 96);
+// }
+// ____________________________________________________
+//* Лучшее Решение
+// function addLetters(...letters) {
+//     return String.fromCharCode((letters.reduce( (a,b) => a+b.charCodeAt(0)-96, 0)+25)%26+97);
+// }
+// _____________________________________________________________________________________________________________________________________
+//TODO 141. Number of Decimal Digits
+// function digits(n) {
+// 	return  (n + "").length
+//   }
+// _____________________________________________________________________________________________________________________________________
+//TODO 142. Averages of numbers
+// function averages(numbers) {
+// 	if (numbers === null || numbers.length < 2 ) return [];
+// 	let result = [];
+// 	for(let i = 0; i < numbers.length - 1; i++) {
+// 	  result.push((numbers[i] + numbers[i + 1]) / 2)
+// 	}
+// 	return result
+//   }
+// _____________________________________________________________________________________________________________________________________
+//TODO 143. All unique
+// function hasUniqueChars(str){
+//   const set = new Set(str);
+//   return str.length === [...set].length
+// }
+// _____________________________________________________________________________________________________________________________________
+//TODO 144.  Sum of Odd Cubed Numbers
+// function cubeOdd(arr) {
+//   if(arr.find((item) => typeof item !== "number") === undefined) {
+//      return arr.map((item) => item**3).reduce((acc, num) => num%2 !== 0 ? acc +=num : acc, 0)
+//     }
+//   return undefined
+// }
+// ____________________________________________________
+//* Лучшее Решение
+// let cubeOdd = a => {
+//   var isNumeric = a.every(x=>!isNaN(x))
+//   return isNumeric ? a.filter(n=>n%2).reduce((s,n)=>s+(n*n*n),0) : undefined
+// }
+//_____________________________________________________________________________________________________________________________________
+//TODO 145. Coding Meetup #3 - Higher-Order Functions Series - Is Ruby coming?
+// function isRubyComing(list) {
+// 	return list.some((item) => item.language === 'Ruby')
+//   }
+//_____________________________________________________________________________________________________________________________________
+//TODO 146. Coding Meetup #2 - Higher-Order Functions Series - Greet developers
+function greetDevelopers(list) {
+  return list.map((item) => ({
+    ...item,
+    greeting: `Hi ${item.firstName}, what do you like the most about ${item.language}?`,
+  }));
+}
+//_____________________________________________________________________________________________________________________________________
+//TODO 147. Build a square
+// function generateShape(integer) {
+// 	return new Array(integer).fill("+".repeat(integer)).join("\n");
+//   }
+//_____________________________________________________________________________________________________________________________________
+//TODO 148.Simple Fun #152: Invite More Women?
+// function inviteMoreWomen(L) {
+// 	return L.reduce((acc, item) => acc+=item, 0) > 0
+//    }
+//_____________________________________________________________________________________________________________________________________
+//TODO 149. Automorphic Number (Special Numbers Series #6)
+// function automorphic(n){
+//   let result = n**2;
+//      let str = result +''
+//   return +str.slice(-String(n).length) === n ? "Automorphic" : 'Not!!'
+//  }
+//_____________________________________________________________________________________________________________________________________
+//TODO 150. Leap Years
+// let isLeapYear = (year) =>
+//   year % 400 === 0 ? true : year % 100 === 0 ? false : year % 4 === 0;
+// ____________________________________________________
+//* Лучшее Решение
+// function isLeapYear(year) {
+//   return (year % 100 !== 0 && year % 4 === 0) || year % 400 === 0;
+// }
+//_____________________________________________________________________________________________________________________________________
+//TODO 151. Simple remove duplicates
+// function solve(arr) {
+//   let uniqVal = [...new Set(arr)];
+//   uniqVal.sort((a, b) => arr.lastIndexOf(a) - arr.lastIndexOf(b));
+//   return uniqVal;
+// }
+// // ____________________________________________________
+// //* Лучшее Решение
+// function solve(arr){
+//   return arr.filter((val,i) => arr.lastIndexOf(val) == i);
+// }
+//_____________________________________________________________________________________________________________________________________
+
 //!   let arr1 = smallCharArr.filter(																						ВАЖНО
 //!     (item, index) => smallCharArr.indexOf(item) === index
+// ___________________________________________________
+//!   [...new Set(A)]   a - array
